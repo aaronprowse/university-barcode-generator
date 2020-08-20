@@ -1,0 +1,27 @@
+#printContainer {
+    width: 350px;
+    margin-top:15px;
+}
+
+.link {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    float: right;
+}
+
+.floatLeft {
+    float: left;
+}
+
+@media print {
+    @page {
+        size: A5 landscape;
+        margin: 0;
+    }
+
+    .printHide {
+        display: none;
+    }
+
+}
